@@ -1,5 +1,6 @@
 html{
     font-family: 'Merriweather', serif;
+    scroll-behavior: smooth;
 }
 *{
     margin: 0;
@@ -9,15 +10,15 @@ html{
 h1{
     font-family: 'Sacramento', cursive;
     font-size: 90px;
-    line-height: 0.8;
+    line-height: 0.01;
 }
 h2{
     font-family: 'Montserrat', sans-serif;
-    font-size: 38px;
+    font-size: 32px;
     font-weight: bolder;
 }
 h3{
-    font-size: 26px;
+    font-size: 24px;
 }
 h1, h2 {
     color: #66bfbf;
@@ -27,15 +28,24 @@ h3, a{
     font-family: 'Montserrat', sans-serif;
 }
 h1, h2, h3, p, a{
-    margin: 48px 0;
+    margin: 40px 0;
 }
-p{
+p {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.8;
     letter-spacing: 1.2px;
     font-weight: 700;
     font-size: 18px;
     color: #333;
+}
+.nav-text{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.8;
+    text-decoration: none;
+    letter-spacing: 1.2px;
+    color: #66bfbf;
+    font-size: 18px;
+    padding: 20px;
 }
 .rule{
     margin: 40px auto;
@@ -57,6 +67,29 @@ p{
 .text{
     text-align: justify;
 }
+/* Navigation */
+.navbar{
+    opacity: 0.9;
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    background-color: #e4f9f5;
+
+}
+.nav-left{
+    padding: 10px 0 0 40px;
+    margin: auto;
+}
+.nav-right{
+    padding: 60px;
+    margin: auto;
+}
+.nav-right .nav-text:hover{
+    filter: brightness(1.2);
+    cursor: pointer;
+}
 /* Heading */
 .heading{
     display: flex;
@@ -65,20 +98,22 @@ p{
     justify-content: center;
     background-color: #e4f9f5;
     font-size: 22px;
-    padding-top: 100px;
+    padding-top: 120px;
 }
 .top-cloud{
     position: relative;
-    left: 340px;
+    left: 360px;
+    top: 50px;
     margin-bottom: 40px;
 }
 .bottom-cloud{
     position: relative;
-    right: 340px;
+    right: 360px;
+    bottom: 70px;
     margin-top: 40px;
 }
 /* Middle */
-.middle-container{
+.middle-container {
     width: 55vw;
     margin: auto;
 }

@@ -12,23 +12,33 @@
 <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    
+    <nav class="navbar">
+      <div class="nav-left">
+        <img style="width: 100px;" src="img/man.png" alt="">
+      </div>
+      <div class="nav-right">
+        <a class="nav-text" href="#">Home</a>
+        <a class="nav-text" href="#introduction">About</a>
+        <a class="nav-text" href="#skill">Skills</a>
+        <a class="nav-text" href="#contact">Contact</a>
+      </div>
+    </nav>
     <div class="heading">
-        <img src="img/cloud.png" alt="cloud" class="top-cloud">
+        <img style="width: 140px; opacity: 0.5;" src="img/cloud.png" alt="cloud" class="top-cloud">
         <h1>I'm Hieu</h1>
-        <h2>a <span style="text-decoration: underline">Web</span> programer.</h2>
-        <img src="img/cloud.png" alt="cloud-img" class="bottom-cloud">
-        <img src="img/mountain.png" alt="mountain-img">
+        <h2>a Web programer.</h2>
+        <img style="width: 140px; opacity: 0.5;" src="img/cloud.png" alt="cloud-img" class="bottom-cloud">
+        <img style="width: 100vw; margin-top: -100px;" src="img/mountain.png" alt="mountain-img">
     </div>
     <div class="middle-container">
-        <div class="profile">
-          <img src="img/275932871_3058364567749001_6252117285644214175_n-modified.png" alt="">
+        <div id="introduction" class="profile">
+          <img style="opacity: 0.9;" src="img/face.png" alt="">
           <h2>Introduction</h2>
           <p>Hello, My name is Hieu and I'm form VietNam. At the moment, I'm in Tokyo - Japan to study and work. I'm a web developer.  I love music and coding something.</p>
         </div>
         <hr class="rule">
         <div class="skills">
-          <h2>My Skills</h2>
+          <h2 id="skill">My Skills</h2>
           <div class="skill-row">
             <div class="col-7 description">
                 <h3 class="name-left">Programing</h3>
@@ -45,7 +55,7 @@
           </div>
         </div>
         <hr class="rule">
-        <div class="contact-me">
+        <div id="contact" class="contact-me">
           <h2>Get In Touch</h2>
           <h3>If you love Music as much as I do</h3>
           <p>Love Music as much as I do? Let's talk about how awesome they are when you get tired. We can code while we listen to the songs !</p>

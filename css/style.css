@@ -72,6 +72,7 @@ p {
     opacity: 0.9;
     position: fixed;
     width: 100vw;
+    height: 100px;
     z-index: 1;
     display: flex;
     justify-content: space-between;
@@ -79,11 +80,9 @@ p {
 
 }
 .nav-left{
-    padding: 10px 0 0 40px;
     margin: auto;
 }
 .nav-right{
-    padding: 60px;
     margin: auto;
 }
 .nav-right .nav-text:hover{
@@ -102,13 +101,13 @@ p {
 }
 .top-cloud{
     position: relative;
-    left: 360px;
+    left: 30vw;
     top: 50px;
     margin-bottom: 40px;
 }
 .bottom-cloud{
     position: relative;
-    right: 360px;
+    right: 30vw;
     bottom: 70px;
     margin-top: 40px;
 }
@@ -125,7 +124,6 @@ p {
     width: 240px;
     height: 240px;
     border-radius: 100%;
-    margin-top: 35px;
 }
 .skill-row{
     display: flex;
@@ -179,8 +177,22 @@ p {
         width: 75vw;
     }
 }
-@media(max-width: 801px)  {
+@media(max-width: 799px)  {
+    h1{
+        font-size: 75px;
+    }
     .middle-container{
         width: 100vw;
+    }
+    .nav-right{
+        display: none;
+    }
+    .skill-row{
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+    .col-2{
+        display: flex;
+        justify-content: center;
     }
 }
